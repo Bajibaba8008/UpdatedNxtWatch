@@ -98,7 +98,6 @@ const SavedVideosRoute = () => (
                                     </ChannesViewsAndUpdatedTime>
                                     <PrimitiveDot as={GoPrimitiveDot} />
                                     <ChannesViewsAndUpdatedTime>
-                                      {/* each.published_at */}
                                       {formatDistanceToNow(
                                         new Date(each.published_at),
                                         {

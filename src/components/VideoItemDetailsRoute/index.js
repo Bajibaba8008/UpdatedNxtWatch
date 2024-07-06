@@ -144,10 +144,6 @@ class VideoItemDetailsRoute extends Component {
                     addOrRemoveAsOrFromSavedVideos(videoDetails)
                   }
 
-                  /*  const likeButtonText = likedList.includes(id)
-
-                  const DislikeButtonText = dislikedList.includes(id) */
-
                   const savedListIds = savedList.map(each => each.id)
 
                   const saveButtonText = savedListIds.includes(id)

@@ -120,6 +120,9 @@ class HomeRoute extends Component {
         return (
           <LoaderOrFailureContainer value={lightTheme}>
             <FailureViewComponent retryFunction={this.getListOfVideosData} />
+            <RetryButton type="button" onClick={this.getListOfVideosData}>
+              Retry
+            </RetryButton>
           </LoaderOrFailureContainer>
         )
       case dataFetchStatusConstants.success:
@@ -173,7 +176,6 @@ class HomeRoute extends Component {
                                 </ChannesViewsAndUpdatedTime>
                                 <PrimitiveDot as={GoPrimitiveDot} />
                                 <ChannesViewsAndUpdatedTime>
-                                  {/* each.published_at */}
                                   {formatDistanceToNow(
                                     new Date(each.published_at),
                                     {
